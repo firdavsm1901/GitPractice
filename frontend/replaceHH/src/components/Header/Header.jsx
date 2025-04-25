@@ -10,7 +10,6 @@ export default function Header() {
             <span className="text-3xl font-bold text-green-700">C</span>
             <span className="ml-1 text-xl italic font-semibold">ivi</span>
           </a>
-          <p>How are you?</p>
 
           <nav className="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
             <a className="hover:text-black cursor-pointer">Home</a>
