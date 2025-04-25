@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Home from "./pages/Home/Home";
 import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
+import PostJob from "./pages/PostJob/PostJob";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/post" element={<PostJob />} />
         </Routes>
       </BrowserRouter>
     </div>

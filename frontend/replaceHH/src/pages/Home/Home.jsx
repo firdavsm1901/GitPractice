@@ -13,7 +13,18 @@ function Home() {
   return (
     <div>
       <Header />
-      <Hero />
+      <Hero
+        heading="Find world’s best"
+        highlights={["remote job", "online job", "freelance job"]}
+        subheading="Discover the best remote and work from home jobs at top remote companies."
+        categories={["All Categories", "Software Engineer", "Consulting"]}
+        stats={[
+          { label: "Jobs submitted", value: "60K+" },
+          { label: "Monthly Users", value: "30K+" },
+        ]}
+        popularSearches={["Software Engineer", "Consulting"]}
+        imageUrl="https://civi.uxper.co/wp-content/uploads/2023/01/image-home-03.webp"
+      />
       <CategoryGrid />
       <FeaturedJobs />
       <BannerVideo />

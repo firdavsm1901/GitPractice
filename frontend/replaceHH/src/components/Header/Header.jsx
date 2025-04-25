@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import AuthModal from "../AuthModal/AuthModa"; // Import the modal component
 
 export default function Header() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <header className="bg-[#fef9f1]">
       <div className="container mx-auto flex flex-wrap items-center justify-between px-6 py-4">
@@ -35,7 +38,8 @@ export default function Header() {
         <div className="flex items-center space-x-4">
           <a
             className="text-sm font-medium text-gray-600 hover:text-green-700 transition-colors duration-200 cursor-pointer"
-            role="link"
+            role="button"
+            onClick={() => setShowModal(true)}
           >
             Login
           </a>
@@ -44,6 +48,8 @@ export default function Header() {
           </button>
         </div>
       </div>
+
+      {showModal && <AuthModal onClose={() => setShowModal(false)} />}
     </header>
   );
 }
